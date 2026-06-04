@@ -45,7 +45,7 @@ def test_date_conversion():
     # Assertions
     assert df['signup_time'].dtype == 'datetime64[ns]'
     assert df['purchase_time'].dtype == 'datetime64[ns]'
-    assert df['time_diff_hours'].iloc[0] == 2.0  # 2 hours difference
+    assert df['time_diff_hours'].iloc[0] == 2.0
     
     print("✓ Date conversion test passed")
 
@@ -76,13 +76,12 @@ def test_imports():
         import pandas
         import numpy
         import sklearn
-        import imblearn
         print("✓ All core packages available")
     except ImportError as e:
         pytest.fail(f"Missing package: {e}")
 
 
-if __name__ == "__main__":
+if name == "main":
     test_ip_conversion()
     test_date_conversion()
     test_data_cleaning()
