@@ -98,5 +98,5 @@ def main():
     print("TRAINING COMPLETE!")
     print("=" * 60)
 
-if name == "main":
+if __name__ == "__main__":
     main()
