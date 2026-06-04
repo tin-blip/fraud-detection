@@ -69,7 +69,7 @@ def main():
     
     return df_mapped
 
-if name == "main":
+if __name__ == "__main__":
     df = main()
     print(f"\nFinal dataset shape: {df.shape}")
     print(f"Fraud rate: {df['class'].mean():.4f}")
