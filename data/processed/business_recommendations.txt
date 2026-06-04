@@ -1,0 +1,28 @@
+BUSINESS RECOMMENDATIONS FOR FRAUD DETECTION
+==================================================
+
+1. time_since_signup_hours
+   Insight: Transactions within 1 hour of signup have high fraud risk
+   Recommendation: Implement mandatory phone/email verification for accounts making purchases within 1 hour of signup
+   Action: Add verification step for new accounts with high-value transactions
+
+2. transactions_last_hour
+   Insight: Rapid successive transactions indicate automated fraud
+   Recommendation: Implement rate limiting: block users exceeding 3 transactions per hour
+   Action: Add velocity check before processing transactions
+
+3. country_*
+   Insight: Certain countries have significantly higher fraud rates
+   Recommendation: Apply enhanced verification (2FA, manual review) for high-risk countries
+   Action: Create country risk tiers and adjust verification requirements
+
+4. device_fraud_rate
+   Insight: Devices previously associated with fraud are reused
+   Recommendation: Maintain device blacklist and flag shared devices
+   Action: Block or challenge transactions from high-risk device IDs
+
+5. purchase_value
+   Insight: Unusually high transaction amounts correlate with fraud
+   Recommendation: Implement dynamic thresholds based on user history
+   Action: Flag transactions > 2 standard deviations above user's average
+
