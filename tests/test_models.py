@@ -104,7 +104,7 @@ def test_train_test_split_stratified():
     print("✓ Stratified split test passed")
 
 
-if name == "main":
+if __name__ == "__main__":
     test_model_training()
     test_model_prediction()
     test_imbalance_handling()

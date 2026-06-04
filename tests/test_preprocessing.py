@@ -82,7 +82,7 @@ def test_imports():
         pytest.fail(f"Missing package: {e}")
 
 
-if name == "main":
+if __name__ == "__main__":
     test_ip_conversion()
     test_date_conversion()
     test_data_cleaning()

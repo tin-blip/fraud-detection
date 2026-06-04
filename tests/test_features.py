@@ -103,7 +103,7 @@ def test_feature_no_nan():
     print("✓ No NaN values test passed")
 
 
-if name == "main":
+if __name__ == "__main__":
     test_time_features()
     test_velocity_features()
     test_device_features()
