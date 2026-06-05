@@ -26,7 +26,7 @@ def test_model_prediction():
     assert len(predictions) == 20
     print("✓ Prediction test passed")
 
-if name == "main":
+if __name__ == "__main__":
     test_model_training()
     test_model_prediction()
     print("\n✅ All model tests passed!")
